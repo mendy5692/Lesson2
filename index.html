@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <script src="script.js"></script>
+    <title>lesson 2</title>
+    <link rel="icon" href="imges\me.png" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="form-page">
+        <form class="my-form" onsubmit="register(event)">
+          <h1 class="reg">Rgister:</h1>
+          <input
+            required
+            name="name"
+            type="text"
+            placeholder="Name..."
+            minlength="2"
+            maxlength="20"
+          />
+          <input
+            name="dob"
+            type="text"
+            placeholder="Date of birth..."
+            onfocus="this.type = 'date'"
+            onblur="this.type = 'text'"
+          />
+          <input
+            name="phon"
+            type="tel"
+            placeholder="Phon number..."
+            minlength="9"
+            maxlength="15"
+            onblur="this.type = 'text'"
+          />
+          <input
+            name="email"
+            type="email"
+            placeholder="Email..."
+            minlength="1"
+          />
+          <div class="grender">
+            <div class="grender-choich1">
+              <label>Male: </label>
+              <input type="radio" name="gander" value="male" checked />
+            </div>
+            <div class="grender-choich2">
+              <label>Female: </label>
+              <input type="radio" name="gander" value="Female" checked />
+            </div>
+            <div class="grender-choich3">
+              <label>Other: </label>
+              <input type="radio" name="gander" value="Other" checked />
+            </div>
+          </div>
+          <div class="video-map">
+            <iframe
+              class="my-video"
+              width="280"
+              height="157"
+              src="https://www.youtube.com/embed/KOEfDvr4DcQ?si=B-d3Cd8rIyxju-xL"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="my-map
+              title="Inline Frame Example"
+              width="280"
+              height="157"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+            >
+            </iframe>
+          </div>
+          <textarea placeholder="write... "></textarea>
+          <div class="buttons">
+            <button>Submit</button>
+            <button type="button" onclick="reset()">reset</button>
+            <button type="button" onclick="allUsers(event)">show users</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  background-color: rgb(233, 233, 202);
+  border-radius: 10px;
+  border: 4px solid brown;
+  resize: vertical;
+}
